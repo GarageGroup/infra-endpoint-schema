@@ -55,6 +55,17 @@ jobs:
     - name: Pack Schema.JsonStringValue
       run: dotnet pack ./src/*/Schema.JsonStringValue.csproj --no-restore -o ~/nuget  -c Release
 
+    # Schema.Array
+
+    - name: Restore Schema.Array
+      run: dotnet restore ./src/*/Schema.Array.csproj
+
+    - name: Build Schema.Array
+      run: dotnet build ./src/*/Schema.Array.csproj --no-restore  -c Release
+
+    - name: Pack Schema.Array
+      run: dotnet pack ./src/*/Schema.Array.csproj --no-restore -o ~/nuget  -c Release
+
     # Push
 
     - name: Push Packages
