@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schema.Base64String", "Sche
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schema.JsonStringValue", "Schema.JsonStringValue\Schema.JsonStringValue.csproj", "{F336A48A-9871-47E3-83E7-9D17FF1B54C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schema.Array", "Schema.Array\Schema.Array.csproj", "{ECF6D5F9-5EA6-48B7-B144-9BBF3763DFA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F336A48A-9871-47E3-83E7-9D17FF1B54C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F336A48A-9871-47E3-83E7-9D17FF1B54C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F336A48A-9871-47E3-83E7-9D17FF1B54C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF6D5F9-5EA6-48B7-B144-9BBF3763DFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF6D5F9-5EA6-48B7-B144-9BBF3763DFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF6D5F9-5EA6-48B7-B144-9BBF3763DFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF6D5F9-5EA6-48B7-B144-9BBF3763DFA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
