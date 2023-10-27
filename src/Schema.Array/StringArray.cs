@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Text.Json.Serialization;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
@@ -26,17 +25,13 @@ public readonly record struct StringArray : IOpenApiSchemaProvider, IEndpointTyp
 
     public static Result<StringArray, Failure<Unit>> Parse(string? source)
     {
-        if (string.IsNullOrEmpty(source))
+        if (source is null)
         {
             return Result.Success<StringArray>(default);
         }
 
         return new StringArray(
-            value: source.Split(',').Where(IsNotEmpty).ToFlatArray());
-
-        static bool IsNotEmpty(string value)
-            =>
-            string.IsNullOrEmpty(value) is false;
+            value: source.Split(','));
     }
 
     public StringArray(in FlatArray<string> value)
