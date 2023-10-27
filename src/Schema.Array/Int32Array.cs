@@ -19,8 +19,7 @@ public readonly record struct Int32Array : IOpenApiSchemaProvider, IEndpointType
                 Type = "integer",
                 Format = "int32",
                 Nullable = false,
-                Example = example,
-                Description = description
+                Example = example
             },
             Description = description
         };
@@ -52,7 +51,7 @@ public readonly record struct Int32Array : IOpenApiSchemaProvider, IEndpointType
             value: builder.MoveToFlatArray());
     }
 
-    public Int32Array(FlatArray<int> value)
+    public Int32Array(in FlatArray<int> value)
         =>
         Value = value;
 
