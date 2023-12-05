@@ -8,13 +8,13 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <RootNamespace>GarageGroup.Infra</RootNamespace>
     <AssemblyName>GarageGroup.Infra.Endpoint.Schema.Array</AssemblyName>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="GarageGroup.Infra.Endpoint.SchemaProvider" Version="0.2.3" />
+    <PackageReference Include="GarageGroup.Infra.Endpoint.SchemaProvider" Version="0.2.5" />
     <PackageReference Include="GarageGroup.Infra.Endpoint.TypeParser" Version="0.2.1" />
-    <PackageReference Include="PrimeFuncPack.Core.FlatArray" Version="1.2.1" />
+    <PackageReference Include="PrimeFuncPack.Core.FlatArray" Version="1.2.2" />
   </ItemGroup>
 
 </Project>
